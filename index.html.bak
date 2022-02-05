@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>my web</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://kit.fontawesome.com/b8e43c14eb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="feedbackbox">
+    <div class="emoji">
+	<div id="emoji">
+	  <img src="C:\Users\anvik\Desktop\feed back\poor.png">
+	   <img src="C:\Users\anvik\Desktop\feed back\bad.png">
+	   <img src="C:\Users\anvik\Desktop\feed back\okay.png">
+        <img src="C:\Users\anvik\Desktop\feed back\good.png">
+        <img src="C:\Users\anvik\Desktop\feed back\excellent.png">
+		</div>		
+		</div>
+          <div class="rating">
+		  <i class="fas fa-star"></i>
+		  <i class="fas fa-star"></i>
+		  <i class="fas fa-star"></i>
+		  <i class="fas fa-star"></i>
+		  <i class="fas fa-star"></i>
+           </div>		  
+		</div>
+		</div>
+		
+</div>
+<script>
+   var stars = document.getElementByClassName("fas");
+   var emoji = document.getElementById("emoji");
+   
+   stars[0].onclick = function(){
+      stars[0].style.color = "#ffd93b";
+	   stars[1].style.color = "#e4e4e4";
+       stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+         stars[4].style.color = "#e4e4e4";
+		 emoji.style.transform = "translateX(0)"
+		 }
+   stars[1].onclick = function(){
+       stars[0].style.color = "#ffd93b";
+	   stars[1].style.color = "#ffd93b";
+       stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+         stars[4].style.color = "#e4e4e4";
+		 emoji.style.transform = "translateX(-100px)"
+		 }
+
+</script>
+</body>
+</html>
